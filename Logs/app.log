@@ -1,0 +1,18 @@
+2024-02-08 22:02:52 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-02-08 22:02:52 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-02-08 22:02:52 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-02-08 22:04:28 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-02-08 22:04:28 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-02-08 22:04:28 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-02-08 22:04:32 - Solicitud GET a Obtener/1: Iniciando la recuperación de datos por ID.
+2024-02-08 22:04:32 - Solicitud GET a Obtener/1: Datos recuperados con éxito.
+2024-02-08 22:04:37 - Solicitud GET a Obtener/2: Iniciando la recuperación de datos por ID.
+2024-02-08 22:04:37 - Solicitud GET a Obtener/2: Datos recuperados con éxito.
+2024-02-08 22:04:41 - Solicitud GET a Obtener/3: Iniciando la recuperación de datos por ID.
+2024-02-08 22:04:41 - Solicitud GET a Obtener/3: Datos recuperados con éxito.
+2024-02-08 22:07:22 - Iniciando inserción de datos en la base de datos.
+2024-02-08 22:07:23 - Datos insertados correctamente en la base de datos.
+2024-02-08 22:07:23 - Solicitud POST a Guardar: Respuesta enviada correctamente.
+2024-02-08 22:10:46 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-02-08 22:10:46 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-02-08 22:10:46 - Solicitud GET a Lista: Respuesta enviada correctamente.
