@@ -1,0 +1,47 @@
+2024-01-31 17:40:02 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-01-31 17:40:02 - Notificación recibida - ID: 1, RequestId: 1, Status: Pending, Message: Transaction successful
+2024-01-31 17:40:02 - Notificación recibida - ID: 2, RequestId: 2, Status: Completed, Message: Payment received
+2024-01-31 17:40:02 - Notificación recibida - ID: 3, RequestId: 192752123, Status: APPROVED, Message: Transaction successful
+2024-01-31 17:40:02 - Notificación recibida - ID: 4, RequestId: 67890123, Status: Approved, Message: Payment successful
+2024-01-31 17:40:02 - Notificación recibida - ID: 5, RequestId: 54321124, Status: Pending, Message: Awaiting payment confirmation
+2024-01-31 17:40:02 - Notificación recibida - ID: 6, RequestId: 123456789, Status: Rejected, Message: Payment failed. Please try again.
+2024-01-31 17:40:02 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-01-31 17:40:02 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-01-31 17:41:11 - Solicitud POST a Guardar: Guardando las notificaciones recientes
+2024-01-31 17:41:11 - Solicitud POST a Guardar: Notificación recibida con éxito.
+2024-01-31 17:41:11 - Solicitud POST a Guardar: Respuesta enviada correctamente.
+2024-01-31 17:41:25 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-01-31 17:41:25 - Notificación recibida - ID: 1, RequestId: 1, Status: Pending, Message: Transaction successful
+2024-01-31 17:41:25 - Notificación recibida - ID: 2, RequestId: 2, Status: Completed, Message: Payment received
+2024-01-31 17:41:25 - Notificación recibida - ID: 3, RequestId: 192752123, Status: APPROVED, Message: Transaction successful
+2024-01-31 17:41:25 - Notificación recibida - ID: 4, RequestId: 67890123, Status: Approved, Message: Payment successful
+2024-01-31 17:41:25 - Notificación recibida - ID: 5, RequestId: 54321124, Status: Pending, Message: Awaiting payment confirmation
+2024-01-31 17:41:25 - Notificación recibida - ID: 6, RequestId: 123456789, Status: Rejected, Message: Payment failed. Please try again.
+2024-01-31 17:41:25 - Notificación recibida - ID: 7, RequestId: 543212431, Status: Processing, Message: Payment is being processed. Please wait.
+2024-01-31 17:41:25 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-01-31 17:41:25 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-01-31 17:41:47 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-01-31 17:41:47 - Notificación recibida - ID: 1, RequestId: 1, Status: Pending, Message: Transaction successful
+2024-01-31 17:41:47 - Notificación recibida - ID: 2, RequestId: 2, Status: Completed, Message: Payment received
+2024-01-31 17:41:47 - Notificación recibida - ID: 3, RequestId: 192752123, Status: APPROVED, Message: Transaction successful
+2024-01-31 17:41:47 - Notificación recibida - ID: 4, RequestId: 67890123, Status: Approved, Message: Payment successful
+2024-01-31 17:41:47 - Notificación recibida - ID: 5, RequestId: 54321124, Status: Pending, Message: Awaiting payment confirmation
+2024-01-31 17:41:47 - Notificación recibida - ID: 6, RequestId: 123456789, Status: Rejected, Message: Payment failed. Please try again.
+2024-01-31 17:41:47 - Notificación recibida - ID: 7, RequestId: 543212431, Status: Processing, Message: Payment is being processed. Please wait.
+2024-01-31 17:41:47 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-01-31 17:41:47 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-01-31 17:42:03 - Solicitud GET a Obtener/543212431: Iniciando la recuperación de datos por ID.
+2024-01-31 17:42:03 - Solicitud GET a Obtener/543212431: Datos recuperados con éxito.
+2024-01-31 17:42:03 - Solicitud GET a Obtener/543212431: Respuesta enviada correctamente.
+2024-02-06 20:00:10 - Solicitud GET a Lista: Iniciando la recuperación de datos.
+2024-02-06 20:00:10 - Notificación recibida - ID: 1, RequestId: 1, Status: Pending, Message: Transaction successful
+2024-02-06 20:00:10 - Notificación recibida - ID: 2, RequestId: 2, Status: Completed, Message: Payment received
+2024-02-06 20:00:10 - Notificación recibida - ID: 3, RequestId: 192752123, Status: APPROVED, Message: Transaction successful
+2024-02-06 20:00:10 - Notificación recibida - ID: 4, RequestId: 67890123, Status: Approved, Message: Payment successful
+2024-02-06 20:00:10 - Notificación recibida - ID: 5, RequestId: 54321124, Status: Pending, Message: Awaiting payment confirmation
+2024-02-06 20:00:10 - Notificación recibida - ID: 6, RequestId: 123456789, Status: Rejected, Message: Payment failed. Please try again.
+2024-02-06 20:00:10 - Notificación recibida - ID: 7, RequestId: 543212431, Status: Processing, Message: Payment is being processed. Please wait.
+2024-02-06 20:00:10 - Solicitud GET a Lista: Datos recuperados con éxito.
+2024-02-06 20:00:10 - Solicitud GET a Lista: Respuesta enviada correctamente.
+2024-02-06 20:18:02 - Solicitud POST a Guardar: Guardando las notificaciones recientes
+2024-02-06 20:18:03 - Error en la solicitud POST a Guardar: Procedure or function 'InsertarWebhook' expects parameter '@Document', which was not supplied.

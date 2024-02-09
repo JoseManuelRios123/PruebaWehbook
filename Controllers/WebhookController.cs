@@ -106,7 +106,7 @@ namespace PruebaWebhook.Controllers
                                 RequestId = Convert.ToInt32(rd["RequestId"]),
                                 Status = rd["Status"].ToString(),
                                 Message = Convert.ToString(rd["Message"]),
-                                Date = Convert.ToDateTime(rd["Date"]),
+                                PaymentDate = Convert.ToDateTime(rd["Date"]),
                                 Document = rd["Document"].ToString(),
                                 DocumentType = rd["DocumentType"].ToString(),
                                 Name = rd["Name"].ToString(),
@@ -142,7 +142,6 @@ namespace PruebaWebhook.Controllers
         [Route("Guardar")]
         public IActionResult Guardar([FromBody] WebhookModel objeto)
         {
-
             try
             {
                 Logger.Log($"Solicitud POST a Guardar: Guardando las notificaciones recientes");
@@ -151,25 +150,25 @@ namespace PruebaWebhook.Controllers
                 {
                     conexion.Open();
                     var cmd = new SqlCommand("InsertarWebhook", conexion);
-                    cmd.Parameters.AddWithValue("RequestId", objeto.RequestId);
-                    cmd.Parameters.AddWithValue("Date", objeto.Date);
-                    cmd.Parameters.AddWithValue("Document", objeto.Document);
-                    cmd.Parameters.AddWithValue("DocumentType", objeto.DocumentType);
-                    cmd.Parameters.AddWithValue("Name", objeto.Name);
-                    cmd.Parameters.AddWithValue("Surname", objeto.Surname);
-                    cmd.Parameters.AddWithValue("Mobile", objeto.Mobile);
-                    cmd.Parameters.AddWithValue("Email", objeto.Email);
-                    cmd.Parameters.AddWithValue("Status", objeto.Status);
-                    cmd.Parameters.AddWithValue("Total", objeto.Total);
-                    cmd.Parameters.AddWithValue("Message", objeto.Message);
-                    cmd.Parameters.AddWithValue("IssuerName", objeto.IssuerName);
-                    cmd.Parameters.AddWithValue("PaymentMethodName", objeto.PaymentMethodName);
-                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("RequestId", objeto.RequestId);
+                    cmd.Parameters.AddWithValue("Date", objeto.Request.Status.Date);
+                    cmd.Parameters.AddWithValue("Document", objeto.Request.Payer.Document);
+                    cmd.Parameters.AddWithValue("DocumentType", objeto.Request.Payer.DocumentType);
+                    cmd.Parameters.AddWithValue("Name", objeto.Request.Payer.Name);
+                    cmd.Parameters.AddWithValue("Surname", objeto.Request.Payer.Surname);
+                    cmd.Parameters.AddWithValue("Mobile", objeto.Request.Payer.Mobile);
+                    cmd.Parameters.AddWithValue("Email", objeto.Request.Payer.Email);
+                    cmd.Parameters.AddWithValue("Status", objeto.Request.Status.StatusValue);
+                    cmd.Parameters.AddWithValue("Total", objeto.Request.Payments?.FirstOrDefault()?.Total ?? 0);
+                    cmd.Parameters.AddWithValue("Message", objeto.Request.Status.Message);
+                    cmd.Parameters.AddWithValue("IssuerName", objeto.Request.Payments?.FirstOrDefault()?.IssuerName);
+                    cmd.Parameters.AddWithValue("PaymentMethodName", objeto.Request.Payments?.FirstOrDefault()?.PaymentMethodName);
+
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.ExecuteNonQuery();
 
                     Logger.Log($"Solicitud POST a Guardar: Notificación recibida con éxito.");
-
                 }
 
                 Logger.Log($"Solicitud POST a Guardar: Respuesta enviada correctamente.");
@@ -179,10 +178,9 @@ namespace PruebaWebhook.Controllers
             catch (Exception ex)
             {
                 Logger.Log($"Error en la solicitud POST a Guardar: {ex.Message}");
-
                 return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = ex.Message });
-
             }
         }
+
     }
 }
